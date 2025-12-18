@@ -1,6 +1,8 @@
 #ifndef _CONTEXT_H_
 #define _CONTEXT_H_
 
+#pragma once
+#include <string>
 #include "../agoratype.h"
 #include "../observer/connectionobserver.h"
 
