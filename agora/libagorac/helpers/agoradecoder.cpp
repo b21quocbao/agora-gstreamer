@@ -58,8 +58,7 @@ bool AgoraDecoder::init(){
 #else
       m_avContext->idct_algo = FF_IDCT_AUTO;
 #endif
-      m_avContext->flags2 |= AV_CODEC_FLAG2_DROP_FRAME_TIMECODE |
-                           AV_CODEC_FLAG2_CHUNKS;
+      m_avContext->flags2 |= AV_CODEC_FLAG2_CHUNKS;
 
 
   if (avcodec_open2(m_avContext, m_avCodec, NULL) < 0) {
