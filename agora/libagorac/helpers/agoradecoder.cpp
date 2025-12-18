@@ -26,6 +26,7 @@ AgoraDecoder::~AgoraDecoder(){
 bool AgoraDecoder::init(){
 
  // avcodec_register_all();
+  const AVCodec* m_avCodec;
   if ((m_avCodec = avcodec_find_decoder(AV_CODEC_ID_H264)) == nullptr) {
     logMessage("Agora video decoder: H264 Codec not found!");
     return false;
